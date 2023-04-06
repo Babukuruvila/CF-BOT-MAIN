@@ -879,8 +879,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('💠 Channel', url='https://t.me/SeriesXOfficial'),
-        InlineKeyboardButton('♻️ Group', url ='https://t.me/SeriesLandChat')
+        InlineKeyboardButton('🌿 Join Our Official Channel 🌿', url='https://t.me/CinemaFactoryOfficiaI')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(

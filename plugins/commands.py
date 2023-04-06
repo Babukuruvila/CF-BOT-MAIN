@@ -30,7 +30,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚠️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅', url='https://t.me/SeriesXOfficial')
+                InlineKeyboardButton('⚠️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅', url='https://t.me/CinemaFactoryOfficiaI')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -66,8 +66,7 @@ async def start(client, message):
         )
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/SeriesLandChat'),
-            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/SeriesXOfficial')
+            InlineKeyboardButton('🌿 Join Our Official Channel 🌿', url='https://t.me/CinemaFactoryOfficiaI')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -117,7 +116,7 @@ async def start(client, message):
                 )
         await client.send_message(
             chat_id=message.from_user.id,
-            text="♦️ ** --READ THIS INSTRUCTION-- ** ♦️\n\n🗣 __സീരീസ് X ഗ്രൂപ്പിൽ ചോദിക്കുന്ന സീരിയസ് നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ലിങ്കിൽ ക്ലിക്ക് ചെയ്തു **Request To Join** ക്ലിക്ക് ചെയ്യണം. ക്ലിക് ചെയ്ത ശേഷം **Try Again** ബട്ടനിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സീരീസ് പ്രൈവറ്റ് ആയി അയച്ചു തരുന്നതാണ്..__😍\n\n🗣 __In Order To Get The Series Requested By You in Our Groups, You Will Have To Click Join Channel Link Below And Click On **Request To Join** First. After That, Click **Try Again** Button. I'll Send You That Series Privately__ 🙈",
+            text="♦️ ** --READ THIS INSTRUCTION-- ** ♦️\n\n🗣 __ഗ്രൂപ്പിൽ ചോദിക്കുന്ന സീരിയസ് നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ലിങ്കിൽ ക്ലിക്ക് ചെയ്തു **Request To Join** ക്ലിക്ക് ചെയ്യണം. ക്ലിക് ചെയ്ത ശേഷം **Try Again** ബട്ടനിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സീരീസ് പ്രൈവറ്റ് ആയി അയച്ചു തരുന്നതാണ്..__😍\n\n🗣 __In Order To Get The Movies Requested By You in Our Groups, You Will Have To Click Join Channel Link Below And Click On **Request To Join** First. After That, Click **Try Again** Button. I'll Send You That Series Privately__ 🙈",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN,
         )
@@ -129,8 +128,7 @@ async def start(client, message):
         "help",
     ]:
         buttons = [[
-            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/SeriesLandChat'),
-            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/SeriesXOfficial')
+            InlineKeyboardButton('🌿 Join Our Official Channel 🌿', url='https://t.me/CinemaFactoryOfficiaI')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(

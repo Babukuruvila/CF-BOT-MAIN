@@ -19,8 +19,8 @@ def is_enabled(value, default):
 SESSION = environ.get("SESSION", "Media_search")
 API_ID = int(environ.get('API_ID', '19680279'))
 API_HASH = environ.get('API_HASH', 'a32f974ade51b2dc74e8db4bb049ad01')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5609134811:AAElnE8wRZJune1ItKtbss-3eO-PCN64EM0')
-USER_SESSION = environ.get('USER_SESSION', 'AQENGJcAL078dsZgyXF31i64vZ5ol-KjYNDbjT9FQX2nTEZ3xCd-h7xtI6VeNCt5h2rSjOxu4zNIqay2FWpmOXNjIJN7kYuRzsEXoWVAc8OcHVThRVoAaMhUlTZqCbuhLOQNAG_XMqj1Mmn7xYkhBc_5GNppqrX-JTfEJOHSa7J8QETA8wmtj1HslC9WdwroFjQmhTs-U0TgVPDr_qedTSNZS3gFzV63Kjc3MojXp307sKNpIm47nrfRqLyfLd4lQMmEnjv8r_96UAl7z6UJXCuBNOt41xInJLJCeV7yrT72V0AGvwqsh6v8q_8ZEaNNW7sRCI5nYmYTiVjMiLFAsdy2aODR5QAAAAFGYPP_AA')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5394607721:AAFComt0NOGWyN92Du91Ak-D8byiZnMGT_I')
+USER_SESSION = environ.get('USER_SESSION', 'AQEpr2kAUx4jbeIeLY2i7FMplptKQvI-wR6nfAkghJ9Ti0ruEjDs8XgQngnOD2eUZFPdJmizLj9lY6rJMULthK96cpSSTTDwdvApx8X6c148lS-xpYswCQVLQBwIFGZoHE52XvINPVlIeoahEhZ-v5lDFPPnTT1Tslsa5AUUTLvuqQLsbMM0fPAzITnBxzZdSwKXvIAkDx9s-09K_dfggN8Ao--ckGvdO4OpmnwKl-7ykRBVaiIakth-kqDvNSxVNL59rFx1Zt_eoUoiYXHK7A7SKrN_GXNkaWpsxNP1peijfGStrY7QtkpQCzCZAg1vScdpyUogYzHTSWBWlcxfe5xLyIo88wAAAAFKJzfwAA')
 # Bot settings
 CACHE_TIME = int(environ.get("CACHE_TIME", 300))
 USE_CAPTION_FILTER = bool(environ.get("USE_CAPTION_FILTER", True))
@@ -46,7 +46,7 @@ ADMINS = [
 ]
 CHANNELS = [
     int(ch) if id_pattern.search(ch) else ch
-    for ch in environ.get('CHANNELS', '-1001306691782').split()
+    for ch in environ.get('CHANNELS', '-1001532592684').split()
 ]
 auth_users = [
     int(user) if id_pattern.search(user) else user
@@ -66,9 +66,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", "False"))
 
 # MongoDB information
-DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://seriesbot:seriesbot@cluster0.m6qtqqw.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get("DATABASE_NAME", "cluster0")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "Telegram_files")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dulquer:dulquer@dulquer.betpe5w.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "dulquer")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 DELETE_CHANNELS = [
@@ -77,13 +77,13 @@ DELETE_CHANNELS = [
 ]
 MAX_B_TN = environ.get("MAX_B_TN", "6")
 MAX_BTN = is_enabled((environ.get("MAX_BTN", "True")), True)
-GRP_LNK = environ.get("GRP_LNK", "https://t.me/SeriesLandChat")
-CHNL_LNK = environ.get("CHNL_LNK", "https://t.me/Seriezx2")
-MSG_ALRT = environ.get("MSG_ALRT", "A Bᴏᴛ Bʏ Tᴇᴀᴍ Mᴏᴠɪᴇ Cʟᴜʙ Oғғɪᴄɪᴀʟ")
+GRP_LNK = environ.get("GRP_LNK", "https://t.me/CinemaFactory_Chat")
+CHNL_LNK = environ.get("CHNL_LNK", "https://t.me/CinemaFactoryOfficiaI")
+MSG_ALRT = environ.get("MSG_ALRT", "❤️")
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001593500302"))
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "MCMovieRobot")
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001884926609'))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+svLBP_vj9MphZDc1')
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+85eFsWXgRMY3MDFl')
 P_TTI_SHOW_OFF = is_enabled((environ.get("P_TTI_SHOW_OFF", "True")), False)
 IMDB = is_enabled((environ.get("IMDB", "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
