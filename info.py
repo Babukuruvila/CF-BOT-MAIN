@@ -46,7 +46,7 @@ ADMINS = [
 ]
 CHANNELS = [
     int(ch) if id_pattern.search(ch) else ch
-    for ch in environ.get('CHANNELS', '-1001532592684').split()
+    for ch in environ.get('CHANNELS', '-1001532592684 -1001829635869').split()
 ]
 auth_users = [
     int(user) if id_pattern.search(user) else user
